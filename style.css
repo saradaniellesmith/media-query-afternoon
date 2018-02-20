@@ -4,6 +4,7 @@ html, body {
     margin: 0;
 }
 
+
 .nav {
     text-align: right;
     height: 70px;
@@ -11,15 +12,18 @@ html, body {
 }
 
 .menu {
-    margin: 0 30px 0 0;
+    margin: 20px 30px 0 0;
 }
 
 .menu a {
     clear: right;
     text-decoration: none;
     color: white;
-    margin: 0 10px;
+    margin: 0 18px;
     line-height: 70px;
+    font-size: 14.4px;
+    letter-spacing: 1px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .menu a:hover {
@@ -40,16 +44,39 @@ label {
     display: none;
 }
 
-@media only screen and (max-width: 500px) {
+.welcome-text {
+    margin: 100px;
+}
+
+.welcome {
+    text-align: center;
+    color: white;
+}
+
+.meet-you {
+    color: white;
+    text-align: center;
+}
+
+.tell-me {
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+@media only screen and (max-width: 600px) {
     label {
         display: block;
         cursor: pointer;
         color: yellow;
     }
+
     .menu {
         text-align: center;
         width: 100%;
         display: none;
+        background: black;
     }
     .menu a {
         display: block;
@@ -64,5 +91,6 @@ label {
     }
     #toggle:checked + .menu {
         display: block;
+        background: black;
     }
 }
